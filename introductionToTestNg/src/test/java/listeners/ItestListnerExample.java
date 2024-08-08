@@ -19,7 +19,7 @@ public class ItestListnerExample {
         {
 
             System.out.println("This method will fail and will invoke the onTestFailure method of ITestlistener");
-            String i="Emmanuel";
+            String i="Ankrah";
             Assert.assertEquals(i, "samuel");
         }
         @Test
