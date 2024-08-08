@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" verbose="1">
+    <listeners>
+        <listener class-name="listeners.ListnersTest"></listener>
+    </listeners>
+    <test name="listeners">
+        <classes>
+            <class name="listeners.ItestListnerExample"></class>
+        </classes>
+    </test>
+    <parameter name="first_name" value="Emmanuel"/>
+    <parameter name="last_name" value="acheampong"/>
+    <parameter name="department" value="Engineering"/>
+
+    <test verbose="2" preserve-order="true" name="com.testn.framework">
+
+        <classes>
+            <class name="com.testn.framework.CarLoans"/>
+            <class name="com.testn.framework.HomeLoans"/>
+        </classes>
+    </test>
+
+    <test name="students.Loan">
+
+        <classes>
+            <class name="students.Loan.StudentsLoanSchme"/>
+        </classes>
+    </test>
+</suite>
